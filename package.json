@@ -1,0 +1,30 @@
+{
+  "name": "cue-tunnel-api",
+  "version": "1.0.0",
+  "description": "Local OpenAI-compatible proxy that bridges CUE to your Antigravity subscription",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:cli": "node server.js --mode=cli",
+    "start:sdk": "node server.js --mode=sdk",
+    "install-sdk": "pip install google-antigravity",
+    "test": "node test.js",
+    "test:context": "node test-context.js"
+  },
+  "keywords": [
+    "cue",
+    "antigravity",
+    "tunnel",
+    "proxy",
+    "openai-compatible"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mammoth": "^1.13.0",
+    "pdf-parse": "^2.4.5",
+    "tesseract.js": "^7.0.0",
+    "xlsx": "^0.18.5"
+  }
+}
